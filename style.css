@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+.calculator {
+  border: 1px solid #000;
+  max-width: 450px;
+  padding: 0 4px 4px 4px;
+  margin: 20px;
+  font-size: 22px;
+  font-family: Roboto;
+  user-select: none;
+  border-radius: 3px;
+  background-color: rgba(119, 98, 4, 0.4);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.top {
+  text-align: right;
+}
+.top__line {
+  border: 1px solid #000;
+  margin: 4px 0px;
+  padding: 8px;
+  border-radius: 3px;
+  height: 50px;
+  line-height: 32px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.input {
+  font-size: 0;
+}
+.input span {
+  font-size: 22px;
+}
+.calculator__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.calculator__btn {
+  border: 1px solid #000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(153, 190, 231);
+  border-radius: 3px;
+  margin: 0px 0px 1px 0px;
+  transition: background-color 0.2s;
+  position: relative;
+  box-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+}
+.calculator__btn:hover {
+  background-color: rgb(117, 174, 240);
+}
+.calculator__btn:active {
+  top: 1px;
+  left: 1px;
+  box-shadow: 0px 0px 1px #000;
+}
+.super {
+  vertical-align: super;
+  font-size: 12px;
+}
+.clean {
+  background-color: rgb(231, 150, 0);
+}
+.clean:hover {
+  background-color: rgb(206, 65, 0);
+}
+.mat {
+  background-color: rgb(197, 197, 197);
+}
+.mat:hover {
+  background-color: rgb(163, 163, 163);
+}
+.end {
+  background-color: rgb(0, 132, 255);
+}
+.end:hover {
+  background-color: rgb(0, 104, 201);
+}
+.up {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.up:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
